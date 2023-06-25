@@ -34,10 +34,10 @@ app.post("/", function (req, res) {
 
   const jsonData = JSON.stringify(data);
 
-  const url = "https://us12.api.mailchimp.com/3.0/lists/177303e121";
+  const url = "https://us12.api.mailchimp.com/3.0/lists/xxxx03e121";
   const option = {
     method: "POST",
-    auth: "Lokesh:590457b93dc872754b764a190f80b5e6-us12",
+    auth: "Lokesh:{APIKEY}",
   };
 
   const request = https.request(url, option, function (response) {
